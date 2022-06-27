@@ -57,4 +57,7 @@ Create the node file named ”hello/hello.nod.xml”. It contains 2 nodes, in wh
 <nodes>
     <node id="1" x="-300.0" y="0.0" />
     <node id="2" x="+300.0" y="0.0" />
-</nodes>
+</nodes>```
+
+### Step 2
+Then, create the edges file named ”hello/hello.edg.xml”. Note that each edge is unidirectional, directing from one node ID to another node ID. We can define also the number of lanes that the edge has.
