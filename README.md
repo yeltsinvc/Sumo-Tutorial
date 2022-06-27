@@ -41,3 +41,21 @@ A SUMO scenario is principally composed of a map (a street network) and traffics
 In this hello assignment, we will simulate a simple scenario. Before doing all steps of this simulation, we create a folder named ’hello’ in the TP folder where we will put all pieces of files.
 
 Note that SUMO read a set of .xml files to do the simulation, composed of information of streets, vehicles, and the traffics and declared as attributes in the corresponding .xml file. In this assignment, we need follow the steps:
+- Creation of node file : .nod.xml
+- Creation of edge file : .edg.xml
+- Creation of network from node file and edge file : .net.xml
+- Creation of traffic demands : .rou.xml
+- Simulation scenario with SUMO-GUI : .sumocfg
+
+## Generation of SUMO streets network
+A network is composed of streets which are structurally built of nodes and edges. A street is composed of at least two nodes and one edge.
+
+Let’s create the first SUMO network :
+### Step 1
+Create the node file named ”hello/hello.nod.xml”. It contains 2 nodes, in which all nodes are defined by its coordinates (x, y, describing distance to the origin in meters ) and its unique ID name:
+```xml
+<nodes>
+    <node id="1" x="-300.0" y="0.0" />
+    <node id="2" x="+300.0" y="0.0" />
+</nodes>
+.```
