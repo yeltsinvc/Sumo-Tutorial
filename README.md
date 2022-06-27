@@ -75,5 +75,6 @@ Now that we have nodes and edges, we can use a SUMO tool, NETCONVERT, which is u
 Use command lines in following steps to call NETCONVERT and create the network file :
 
 ### Step 4 
-Open windows command-line interpreter (type CMD in windows research) and go to your folder repertory by the command line : ```$ cd path_to_folde
+Open windows command-line interpreter (type CMD in windows research) and go to your folder repertory by the command line : 
+```$ cd path_to_folde
 ```
