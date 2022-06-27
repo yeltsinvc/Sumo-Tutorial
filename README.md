@@ -16,6 +16,6 @@ Guide pour le logiciel SUMO
 
 # Introduction
 SUMO, [Simulation of Urban MObility](http://sumo.dlr.de/index.html), is an open source, microscopic, multi-modal traffic simulation tool, which is created by the Institute of Transportation Systems of the German Aerospace Center(DLR). SUMO is purely microscopic: each vehicle is modeled specifically, has its own trajectory and moves individually in the network with SUMO, for example:  
-1. You can build the network and create routes.
-1. You can apply a traffic light algorithm.
-2. You can analyze your simulation result with SUMO.
+- You can build the network and create routes.
+- You can apply a traffic light algorithm.
+- You can analyze your simulation result with SUMO.
