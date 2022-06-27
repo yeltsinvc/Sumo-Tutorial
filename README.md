@@ -80,3 +80,22 @@ Open windows command-line interpreter (type CMD in windows research) and go to y
 
 ### Step 5
 Create the network file by the command in a line: ```$ netconvert --node-files=hello.nod.xml --edge-files=hello.edg.xml --output-file=hello.net.xml ```
+
+### Step 6
+We can find this application(sumo-gui.exe) in the search of windows. Use the ”Open Network” in ”File”bmenu to import the network.
+
+For more information, you can find the SUMO-GUI Usage Description in the link : Usage Description.
+
+### Step 7
+Create a route file named ”hello.rou.xml” file:
+```xml
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0"
+    maxSpeed="100.0" sigma="0.0" />
+    <route id="route0" edges="1to2 2to1"/>
+    <vehicle depart="1" id="veh0" route="route0" 
+    type="Car" />
+</routes>
+```
+
+
