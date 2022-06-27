@@ -77,4 +77,6 @@ Use command lines in following steps to call NETCONVERT and create the network f
 ### Step 4 
 Open windows command-line interpreter (type CMD in windows research) and go to your folder repertory by the command line : 
 ```$ cd path_to_folder ```
-dfd
+
+### Step 5
+Create the network file by the command in a line: ```$ netconvert --node-files=hello.nod.xml --edge-files=hello.edg.xml --output-file=hello.net.xml ```
