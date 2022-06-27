@@ -62,3 +62,18 @@ Create the node file named ”hello/hello.nod.xml”. It contains 2 nodes, in wh
 
 ### Step 2
 Then, create the edges file named ”hello/hello.edg.xml”. Note that each edge is unidirectional, directing from one node ID to another node ID. We can define also the number of lanes that the edge has.
+
+```xml
+<edges>
+    <edge from="1" id="1to2" to="2" numLanes="3"/>
+    <edge from="2" id="2to1" to="1" numLanes="2"/>
+</edges>
+```
+
+### Step 3
+Now that we have nodes and edges, we can use a SUMO tool, NETCONVERT, which is used for combining nodes information and edges information, and generating network file where the vehicles can run along. This file is ended by an extention *.net.xml.
+Use command lines in following steps to call NETCONVERT and create the network file :
+
+### Step 4 
+Open windows command-line interpreter (type CMD in windows research) and go to your folder repertory by the command line : ```$ cd path_to_folde
+```
