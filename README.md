@@ -155,12 +155,45 @@ A example for the new hello.rou.xml :
 </routes>
 ```
 Note that ```<vType>``` has vClass = ’passenger’ by default if not given.
-# Simulation with Real network (OpenStreetMap)
+# Obtaining transport network from osm
 ## Step 1
 In SUMO we can import a transportation network from openstreetmap and then input demand data.
 ![Export OSM](images/osm.JPG)
 ## Step 2
 Convert .osm file to .net file by the command in a line: ```$netconvert --osm-files Plaza_Bolognesi.osm -o red_vial.net.xml```
-## Step 2
+## Step 3
 We can visualize the network with sumo_gui in File/Open Network
 ![Network](images/network.JPG)
+
+# Simulation with Real network (OpenStreetMap)
+In this assignment, we will use a real network of Paris (l’Arc de Triomphe and Champs Elysée) : paris.net.xml. Routes are generated randomly by the tool randomTrips.py.
+Once the simulation has ﬁnished, we can ﬁnd two ﬁles generated, which we declared in the conﬁguration ﬁle as outputs of the simulation:
+- tripInfo.xml, contains every vehicle’s information.
+- Summary.xml, contains a global summary for every time step
+Simulation conﬁguration ﬁle : paris.sumocfg
+```xml
+<configuration> 
+	<input>
+		<net-file value="paris.net.xml"/>
+		<route-files value="paris.rou.xml"/> 
+		<gui-settings-file value="network.settings.xml"/>
+	</input> 
+	<output>
+		<tripinfo-output value="tripinfo.xml"/>
+		<summary-output value="summary.xml"/> 
+		</output> <time> <begin value="0"/> 
+		<end value="3650"/> 
+	</time> 
+</configuration
+```
+## Analysis of simulation results
+### Step 1
+In this step, we will analyze traffic results of the simulation. The most interesting ﬁle we use here is the tripinfo.xml ﬁle, who has all time and speed information for each vehicle.
+1. In SUMO packages, a script xml2csv.py is given to convert a xml ﬁle to scv, which is located in : `C:\Program Files (x86)\Eclipse\Sumo\tools\xml`.
+Let’s convert tripinfo.xml to tripinfo.csv. Command in one line:
+```$C:\Program Files (x86)\Eclipse\Sumo\tools\xml\xml2csv.py <input_file>```
+
+# Traci
+In this section, we will use a tool Traci, written on Python, which can communicate into a running simulation and allow us to get information and to control the traﬃc elements’ behavior.
+## Step 1
+Open python file `osm_paris/run_paris`and execute in anaconda. Try to understand the code.

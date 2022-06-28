@@ -1,0 +1,15 @@
+<configuration>
+	<input>
+		<net-file value="paris.net.xml"/>
+		<route-files value="paris.rou.xml"/>
+		<gui-settings-file value="network.settings.xml"/>
+	</input>
+	<output>
+		<tripinfo-output value="tripinfo.xml"/>
+		<summary-output value="summary.xml"/>
+	</output>
+	<time>
+		<begin value="0"/>
+		<end value="3650"/>
+	</time>
+</configuration>
