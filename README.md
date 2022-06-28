@@ -4,8 +4,8 @@ Sumo Tutorial
 **Table of contents**
 1. [Introduction](#introduction)
 1. [Installation](#installation)
-1. [Assignment 1: Hello SUMO](#assignment-1:-hello-sumo)
-1. [Obtaining transport network from osm](#obtaining-transport-network-from-osm)
+1. [Assignment 1 Hello SUMO](#assignment-1-hello-sumo)
+1. [Obtaining transportation network from osm](#obtaining-transportation-network-from-osm)
 1. [Traci](#traci)
 
  
@@ -29,7 +29,7 @@ SUMO can be installed in Windows, Linux, as well as in Mac-OS. Follow the notice
 ## Installation of Anaconda
 Anaconda is an open source python platform. Download and install Anaconda for Python 3 version : [Link Anaconda](https://www.anaconda.com/products/distribution).
 
-# Assignment 1: Hello SUMO
+# Assignment 1 Hello SUMO
 This exercise aims at understanding SUMO how we can generate and simulate a traffic scenario.
 
 A SUMO scenario is principally composed of a map (a street network) and traffics (vehicles and their routes). A map could be a real part of city map or a manual created map, represented like a network which consists of nodes (junctions) and edges (streets connecting the junctions). In order to put traffics on a map, we need give the information including the vehicle type, the vehicle trajectory, the number of vehicles.
@@ -151,7 +151,7 @@ A example for the new hello.rou.xml :
 </routes>
 ```
 Note that ```<vType>``` has vClass = ’passenger’ by default if not given.
-# Obtaining transport network from osm
+# Obtaining transportation network from osm
 ## Step 1
 In SUMO we can import a transportation network from openstreetmap and then input demand data.
 ![Export OSM](images/osm.JPG)
