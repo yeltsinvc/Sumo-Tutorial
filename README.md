@@ -160,4 +160,7 @@ Note that ```<vType>``` has vClass = ’passenger’ by default if not given.
 In SUMO we can import a transportation network from openstreetmap and then input demand data.
 ![Export OSM](images/osm.JPG)
 ## Step 2
-Convert .osm file to .net file by the command in a line:
+Convert .osm file to .net file by the command in a line: ```$netconvert --osm-files Plaza_Bolognesi.osm -o red_vial.net.xml```
+## Step 2
+We can visualize the network with sumo_gui in File/Open Network
+![Network](images/network.JPG)
