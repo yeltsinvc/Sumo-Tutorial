@@ -158,5 +158,6 @@ Note that ```<vType>``` has vClass = ’passenger’ by default if not given.
 # Simulation with Real network (OpenStreetMap)
 ## Step 1
 In SUMO we can import a transportation network from openstreetmap and then input demand data.
+![Export OSM](images/osm.JPG)
 ## Step 2
 Convert .osm file to .net file by the command in a line:
