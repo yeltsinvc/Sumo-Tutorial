@@ -1,12 +1,11 @@
 Sumo Tutorial
 ==============
 
-**Table des matières**
+**Table of contents**
 1. [Introduction](#introduction)
 1. [Installation](#installation)
 1. [Assignment 1: Hello SUMO](#assignment-1:-hello-sumo)
 1. [Obtaining transport network from osm](#obtaining-transport-network-from-osm)
-1. [Configuration des carrefours](#configuration-des-carrefours)
 1. [Traci](#traci)
 
  
