@@ -164,10 +164,10 @@ We can visualize the network with sumo_gui in File/Open Network
 ![Network](images/network.JPG)
 
 # Simulation with Real network (OpenStreetMap)
-In this assignment, we will use a real network of Paris (l’Arc de Triomphe and Champs Elysée) : paris.net.xml. Routes are generated randomly by the tool randomTrips.py.
+In this assignment, we will use a real network of Paris (l’Arc de Triomphe and Champs Elysée) : `paris.net.xml`. Routes are generated randomly by the tool `randomTrips.py`.
 Once the simulation has ﬁnished, we can ﬁnd two ﬁles generated, which we declared in the conﬁguration ﬁle as outputs of the simulation:
-- tripInfo.xml, contains every vehicle’s information.
-- Summary.xml, contains a global summary for every time step
+- `tripInfo.xml`, contains every vehicle’s information.
+- `Summary.xml`, contains a global summary for every time step
 Simulation conﬁguration ﬁle : `paris.sumocfg`
 ```xml
 <configuration> 
@@ -186,8 +186,8 @@ Simulation conﬁguration ﬁle : `paris.sumocfg`
 ```
 ## Analysis of simulation results
 ### Step 1
-In this step, we will analyze traffic results of the simulation. The most interesting ﬁle we use here is the `tripinfo.xmlv ﬁle, who has all time and speed information for each vehicle.
-1. In SUMO packages, a script `xml2csv.pyv is given to convert a xml ﬁle to scv, which is located in : `C:\Program Files (x86)\Eclipse\Sumo\tools\xml`.
+In this step, we will analyze traffic results of the simulation. The most interesting ﬁle we use here is the `tripinfo.xmlv` ﬁle, who has all time and speed information for each vehicle.
+1. In SUMO packages, a script `xml2csv.pyv` is given to convert a xml ﬁle to scv, which is located in : `C:\Program Files (x86)\Eclipse\Sumo\tools\xml`.
 Let’s convert `tripinfo.xml` to `tripinfo.csv`. Command in one line:
 ```$C:\Program Files (x86)\Eclipse\Sumo\tools\xml\xml2csv.py <input_file>```
 
